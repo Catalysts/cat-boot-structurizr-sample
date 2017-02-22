@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'cc.catalysts.boot:cat-boot-structurizr:0.1.7'
+    compile "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.2.1'
+}

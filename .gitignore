@@ -1,12 +1,42 @@
-*.class
+**/build
+**/.settings
+**/.classpath
+**/bin
+**/lib
+**/target
+**/plugin.xml
+*.augmented.*
+**/*.ipr
+**/*.iws
+**/.gradle
+**/cert
+**/out
+**/.dev/
+**/.tmp/
+**/.DS_Store
+**/*.sublime-project
+**/*.sublime-workspace
+**/bower_components/
+**/node_modules/
+**/test/coverage/
+**/dist
+**/npm-debug.log
+**/pdf-out
+data/
+.project
+*-ui.js
+*-ui.tpl.js
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+docs
 
-# Package Files #
-*.jar
-*.war
-*.ear
+classes/*
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+*.iml
+
+.idea/*
+!.idea/vcs.xml
+!.idea/modules.xml
+!.idea/encodings.xml
+!.idea/codeStyleSettings.xml
+!.idea/runConfigurations/
+!.idea/jsLinters

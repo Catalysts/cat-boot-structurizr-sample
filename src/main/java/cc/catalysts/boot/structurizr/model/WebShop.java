@@ -1,6 +1,6 @@
 package cc.catalysts.boot.structurizr.model;
 
-import cc.catalysts.boot.structurizr.ViewProvider;
+import cc.catalysts.structurizr.ViewProvider;
 import com.structurizr.model.Container;
 import com.structurizr.model.Location;
 import com.structurizr.model.Model;

@@ -1,7 +1,9 @@
 structurizr:
-  workspace-id: 39399
-  key: c40a8d19-56de-44df-8dfc-0c38b1f16982
-  secret: secret
+  workspace:
+    id: 39399
 
-  name: Structurizr with Spring Boot
-  description: This is a sample workspace demonstrating structurizr-extensions
+    name: Structurizr with Spring Boot
+    description: This is a sample workspace demonstrating structurizr-extensions
+
+    key: c40a8d19-56de-44df-8dfc-0c38b1f16982
+    secret: secret

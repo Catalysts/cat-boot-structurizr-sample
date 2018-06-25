@@ -27,8 +27,6 @@ data/
 *-ui.js
 *-ui.tpl.js
 
-docs
-
 classes/*
 
 *.iml

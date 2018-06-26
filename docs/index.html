@@ -1,10 +1,122 @@
 <html>
-
 <head>
-    <title>Structurizr Sample</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.min.css">
 </head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <section><h1>Architecture as code</h1></section>
+            <section><h2>Klaus Lehner</h2>
+                <ul>
+                    <li>CEO Catalysts</li>
+                    <li>Architect</li>
+                    <li>Coder</li>
+                    <li>Clean Code fetishist</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section><h1>Why?</h1></section>
+            <section>Why not?</section>
+            <section>Because someone wants us to do some documentation...</section>
+            <section><h2>But we hate UML</h2></section>
+            <section><h2>We hate documentation at all</h2></section>
+            <section>So why architecture as code?</section>
+            <section>Because we are devs!</section>
+            <section>Because we can!</section>
+            <section>Because sys-admins have infrastructure as code!</section>
+        </section>
 
-<body><h1>Sample</h1></body>
+        <section>
+            <section><h1>Theory: The C4 Model</h1></section>
+            <section>
+                <h2>The C4 Model</h2>
+                <p>Credits go to Simon Brown, check his great <a href="https://c4model.com/"
+                                                                 target="_blank">homepage</a>
+                </p>
+                <p>Basic idea is to create a common <b>model</b> of your software architecture, containing:</p>
+                <ul>
+                    <li>Context</li>
+                    <li>Containers</li>
+                    <li>Components</li>
+                    <li>Code</li>
+                </ul>
+                <p>along with their relationships amongst each other.</p>
+            </section>
+            <section>
+                <h2>The C4 Model</h2>
 
+                <p>...and then provide different <b>views</b> with different abstraction levels onto your model</p>
+            </section>
+            <section>
+                <h2>The C4 Model</h2>
 
+                <p>Unclear?</p>
+                <p>Check his <a href="https://c4model.com/"
+                                target="_blank">homepage</a> now!</p>
+            </section>
+        </section>
+
+        <section>
+            <section><h1>So where is the code?</h1></section>
+            <section><h1>Structurizr</h1>
+                <p>Simon Brown created <a href="https://structurizr.com/"
+                                          target="_blank">Structurizr</a> as a reference implementation of the C4 model
+                </p>
+                <p>Structurizr is a publishing platform for software architecture diagrams and documentation based upon
+                    the C4 model; available as a free/paid cloud service and an on-premises installation</p>
+            </section>
+            <section><h2>Structurizr</h2>
+                <p>It contains clients in various languages (Java/Kotlin, .NET) and a Web-Platform for visualizating
+                    the views</p>
+                <p>So basically you code your architecture in Java/Kotlin or .NET, push it to the web, and visualize
+                    it there</p>
+            </section>
+            <section>
+                <h2>Structurizr</h2>
+
+                <p>Unclear?</p>
+                <p>Check his <a href="https://structurizr.com/"
+                                target="_blank">homepage</a> now!</p>
+            </section>
+        </section>
+
+        <section>
+            <section><h1>Java?</h1></section>
+            <section><h1>Spring!</h1></section>
+            <section><h1>Kotlin!</h1></section>
+            <section><h1>Code now!</h1>
+                <p>and check <a href="https://github.com/Catalysts/structurizr-extensions">https://github.com/Catalysts/structurizr-extensions</a>
+                </p></section>
+        </section>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+<script>
+    Reveal.initialize({
+        dependencies: [
+            {src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js'},
+            {src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.js'},
+            {src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.js', async: true},
+            {
+                src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ],
+        width: 1200,
+        center: true,
+        history: true,
+        progress: false
+    });
+</script>
+</body>
 </html>

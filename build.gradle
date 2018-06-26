@@ -1,4 +1,9 @@
-apply plugin: 'java'
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.2.50"
+    id "org.jetbrains.kotlin.plugin.allopen" version "1.2.50"
+    id "org.jetbrains.kotlin.plugin.noarg" version "1.2.50"
+    id "org.jetbrains.kotlin.plugin.spring" version "1.2.50"
+}
 
 sourceCompatibility = 1.8
 
@@ -9,7 +14,9 @@ repositories {
 
 dependencies {
     compile 'cc.catalysts.structurizr:structurizr-spring-boot:1.0.1'
+    compile 'cc.catalysts.structurizr:structurizr-kotlin:1.0.1'
     compile "org.springframework.boot:spring-boot-starter:2.0.3.RELEASE"
+    compile "org.jetbrains.kotlin:kotlin-reflect:1.2.50"
 }
 
 task wrapper(type: Wrapper) {

@@ -6,4 +6,4 @@ The corresponding workspace of the sample code is public on Structurizr.com and 
 
 The container view of the WebShop looks like this:
 
-![StructurizrScreenshot](https://github.com/Catalysts/cat-boot-structurizr-sample/raw/master/structurizr-26741-webshop.png)
+![StructurizrScreenshot](https://github.com/Catalysts/cat-boot-structurizr-sample/raw/master/structurizr-webshop.png)
